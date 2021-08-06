@@ -12,8 +12,38 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter project description",
+        message: "Enter project description:",
         name: "description",
+    },
+    {
+        type: "input",
+        message: "Enter project installation instructions:",
+        name: "installation",
+    },
+    {
+        type: "input",
+        message: "Enter project usage information:",
+        name: "usage",
+    },
+    {
+        type: "input",
+        message: "Enter project test instructions:",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "Enter your github username:",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "Enter your email address:",
+        name: "email",
+    },
+    {
+        type: "input",
+        message: "Enter contact information for any contributors:",
+        name: "contributing",
     },
 ];
 
