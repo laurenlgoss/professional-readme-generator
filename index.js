@@ -13,15 +13,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (error) => {
+        if (error) {
+            console.error(error);
+        }
+    });
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
-        .then((response) =>
-            console.log(response.title)
-        );
+        .then((response) => {
+            console.log(response.title);
+            writeToFile(`${response.title}.md`, generateMarkdown(response));
+        });
 }
 
 // Function call to initialize app
