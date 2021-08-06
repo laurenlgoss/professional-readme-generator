@@ -10,6 +10,11 @@ const questions = [
         message: "Enter project title:",
         name: "title",
     },
+    {
+        type: "input",
+        message: "Enter project description",
+        name: "description",
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -26,7 +31,6 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            console.log(response.title);
             writeToFile(`${response.title}.md`, generateMarkdown(response));
         });
 }
