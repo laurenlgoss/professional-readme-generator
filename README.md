@@ -31,7 +31,7 @@ The application will take the user's input and insert their answers into an auto
 
 ## Tests
 
-![Tutorial](./professional-readme-generator-video.webm)
+![Walkthrough Video](./professional-readme-generator.gif)
 
 ## Questions
 
