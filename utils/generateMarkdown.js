@@ -46,49 +46,49 @@ function renderLicenseSection(license) {
 // Generate markdown for README
 function generateMarkdown(response) {
   return `
-  # ${response.title}
-  ${renderLicenseBadge(response.license)}
-  ## Description
+# ${response.title}
+${renderLicenseBadge(response.license)}
+## Description
 
-  ${response.description}
+${response.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
-  * [Contributing](#Contributing)
-  * [License](#License)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Questions](#Questions)
+* [Contributing](#Contributing)
+* [License](#License)
 
-  ## Installation
+## Installation
 
-  ${response.installation}
+${response.installation}
 
-  ## Usage
+## Usage
 
-  ${response.usage}
+${response.usage}
 
-  ## Tests
+## Tests
 
-  ${response.tests}
+${response.tests}
 
-  ## Questions
+## Questions
 
-  Do you have questions? Contact me here:
+Do you have questions? Contact me here:
 
-  * [GitHub](https://github.com/${response.github})
-  * [Email](${response.email})
+* [GitHub](https://github.com/${response.github})
+* [Email](${response.email})
 
-  ## Contributing
+## Contributing
 
-  ${response.contributing}
+${response.contributing}
 
-  ## License
+## License
 
-  ${renderLicenseSection(response.license)}${renderLicenseLink(response.license)}
+${renderLicenseSection(response.license)}${renderLicenseLink(response.license)}
 
-  `;
+`;
 }
 
 module.exports = generateMarkdown;
