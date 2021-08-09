@@ -45,6 +45,12 @@ const questions = [
         message: "Enter contact information for any contributors:",
         name: "contributing",
     },
+    {
+        type: "list",
+        message: "Choose your project's license:",
+        choices: ["Apache License 2.0", "GNU GPLv3", "ISC", "MIT", "None"],
+        name: "license",
+    },
 ];
 
 // TODO: Create a function to write README file
