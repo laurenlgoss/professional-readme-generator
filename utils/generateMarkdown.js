@@ -4,7 +4,19 @@ function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === "Apache License 2.0") {
+    return "https://www.apache.org/licenses/LICENSE-2.0";
+  } else if (license === "GNU GPLv3") {
+    return "https://www.gnu.org/licenses/gpl-3.0.en.html";
+  } else if (license === "ISC") {
+    return "https://www.isc.org/licenses/";
+  } else if (license === "MIT") {
+    return "https://www.mit.edu/~amini/LICENSE.md";
+  } else {
+    return "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -59,7 +71,7 @@ function generateMarkdown(response) {
 
   ## License
 
-  ${renderLicenseSection(response.license)}
+  [${renderLicenseSection(response.license)}](${renderLicenseLink(response.license)})
 
   `;
 }
