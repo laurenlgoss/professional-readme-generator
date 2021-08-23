@@ -67,7 +67,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            writeToFile("README.md", generateMarkdown(response));
+            writeToFile("./dist/README.md", generateMarkdown(response));
         });
 }
 

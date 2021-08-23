@@ -27,7 +27,7 @@ node index.js
 
 The user will then be presented with a series of questions within the terminal about their project including title, description, installation instructions, usage information, test instructions, GitHub username, email address, contact information for any contributors, and license.
 
-The application will take the user's input and insert their answers into an automatically generated README.md file. This new file will be placed at the level of the root of this application.
+The application will take the user's input and insert their answers into an automatically generated README.md file. This new file will be placed within the /dist folder.
 
 ## Tests
 
